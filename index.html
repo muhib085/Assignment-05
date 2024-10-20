@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-05</title>
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- configure color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#B4F461",
+              "navbar-color": "#F9F7F3",
+              "coin-bg": "#F3F3F3",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="mb-8">
+      <nav class="bg-navbar-color">
+        <div class="navbar pb-11 xl:container xl:mx-auto">
+          <div class="navbar-start">
+            <a
+              class="btn btn-ghost lg:text-xl hover:bg-primary-color bg-primary-color"
+              >Blog</a
+            >
+          </div>
+          <div class="navbar-center flex items-center justify-center space-x-4">
+            <img class="lg:size-auto size-5" src="assets/logo.png" alt="" />
+            <span class="font-semibold lg:text-xl text-sm"
+              >Donate Bangladesh</span
+            >
+          </div>
+          <div class="navbar-end space-x-3">
+            <img class="size-5 lg:size-auto" src="assets/coin.png" alt="" />
+            <p class="lg:text-xl text-sm">5500 BDT</p>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Buttons -->
+      <div class="flex justify-center mt-20 space-x-4">
+        <button
+          class="btn btn-lg font-semibold text-xl active:bg-primary-color"
+        >
+          Donation
+        </button>
+        <button
+          class="btn btn-lg font-semibold text-xl active:bg-primary-color"
+        >
+          History
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- DONATIONS start -->
+      <section class="space-y-8">
+        <!-- Noakhali donation start -->
+        <section>
+          <div class="xl:container xl:mx-auto">
+            <div class="rounded-lg shadow-lg border-solid border-2 m-2">
+              <div class="flex flex-col lg:flex-row space-x-10 space-y-5 p-5">
+                <img src="assets/noakhali.png" class="rounded-lg shadow-2xl" />
+                <div>
+                  <div class="flex justify-center lg:justify-normal">
+                    <div
+                      class="flex bg-coin-bg space-x-2 w-auto lg:w-2/12 py-1 justify-center rounded-lg"
+                    >
+                      <img src="assets/coin.png" alt="" />
+                      <p>0 BDT</p>
+                    </div>
+                  </div>
+                  <h1 class="text-xl font-bold">
+                    Donate for Flood at Noakhali, Bangladesh
+                  </h1>
+                  <p class="py-6">
+                    The recent floods in Noakhali have caused significant damage
+                    to homes infrastructure. Your donation will help provide
+                    essential supplies and to those affected by this disaster.
+                    Every contribution, big or small, makes difference. Please
+                    join us in supporting the relief efforts and making a
+                    positive impact on the lives of those in need.
+                  </p>
+                  <div class="flex flex-col space-y-2">
+                    <input
+                      class="p-3 rounded-lg shadow-md"
+                      type="text"
+                      placeholder="Write Donation Amount"
+                    />
+                    <button class="btn bg-primary-color hover:bg-primary-color">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Noakhali donation end -->
+
+        <!-- Feni donation start -->
+        <section>
+          <div class="xl:container xl:mx-auto">
+            <div class="rounded-lg shadow-lg border-solid border-2 m-2">
+              <div class="flex flex-col lg:flex-row space-x-10 space-y-5 p-5">
+                <img src="assets/noakhali.png" class="rounded-lg shadow-2xl" />
+                <div>
+                  <div class="flex justify-center lg:justify-normal">
+                    <div
+                      class="flex bg-coin-bg space-x-2 w-auto lg:w-2/12 py-1 justify-center rounded-lg"
+                    >
+                      <img src="assets/coin.png" alt="" />
+                      <p>0 BDT</p>
+                    </div>
+                  </div>
+                  <h1 class="text-xl font-bold">
+                    Donate for Flood Relief in Feni,Bangladesh
+                  </h1>
+                  <p class="py-6">
+                    Since late August, severe flash floods and monsoons plaguing
+                    Bangladesh have affected nearly 6 million people.
+                    Bangladeshi officials have declared the floods to be the
+                    country's worst climate disaster in recent memory. These
+                    recent floods follow the wake of Cyclone Remal, which
+                    devastated Bangladesh and West Bengal earlier this year.
+                  </p>
+                  <div class="flex flex-col space-y-2">
+                    <input
+                      class="p-3 rounded-lg shadow-md"
+                      type="text"
+                      placeholder="Write Donation Amount"
+                    />
+                    <button class="btn bg-primary-color hover:bg-primary-color">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Feni donation end -->
+
+        <!-- aid for quota movement start -->
+        <section>
+          <div class="xl:container xl:mx-auto">
+            <div class="rounded-lg shadow-lg border-solid border-2 m-2">
+              <div class="flex flex-col lg:flex-row space-x-10 space-y-5 p-5">
+                <img src="assets/noakhali.png" class="rounded-lg shadow-2xl" />
+                <div>
+                  <div class="flex justify-center lg:justify-normal">
+                    <div
+                      class="flex bg-coin-bg space-x-2 w-auto lg:w-2/12 py-1 justify-center rounded-lg"
+                    >
+                      <img src="assets/coin.png" alt="" />
+                      <p>0 BDT</p>
+                    </div>
+                  </div>
+                  <h1 class="text-xl font-bold">
+                    Aid for Injured in the Quota Movement
+                  </h1>
+                  <p class="py-6">
+                    Nearly a month after taking office, the Chief Adviser Dr
+                    Muhammad Yunus announced through a televised speech on
+                    September 11 that the families of the martyrs, as well as
+                    the students and citizens injured during the July uprising,
+                    will receive rehabilitation, and their treatment costs will
+                    be covered.Timely medical treatment can mean the difference
+                    between life and death, and whether an individual suffers
+                    permanent disability. We have seen reports of protesters
+                    succumbing to injuries after fighting for their lives for
+                    days.
+                  </p>
+                  <div class="flex flex-col space-y-2">
+                    <input
+                      class="p-3 rounded-lg shadow-md"
+                      type="text"
+                      placeholder="Write Donation Amount"
+                    />
+                    <button class="btn bg-primary-color hover:bg-primary-color">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- aid for quota movement end -->
+      </section>
+    </main>
+    <footer class="p-11 bg-navbar-color mt-20"></footer>
+  </body>
+</html>
