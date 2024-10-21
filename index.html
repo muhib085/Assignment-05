@@ -28,10 +28,10 @@
     </script>
   </head>
   <body>
-    <header class="mb-8">
+    <header class="mb-8 sticky top-0 shadow-lg p-2 backdrop-blur-md">
       <nav class="bg-navbar-color">
         <div class="navbar pb-11 xl:container xl:mx-auto">
-          <div class="navbar-start">
+          <div id="btn-blog" class="navbar-start">
             <a
               class="btn btn-ghost lg:text-xl hover:bg-primary-color bg-primary-color"
               >Blog</a
@@ -45,7 +45,9 @@
           </div>
           <div class="navbar-end space-x-3">
             <img class="size-5 lg:size-auto" src="assets/coin.png" alt="" />
-            <p class="lg:text-xl text-sm">5500 BDT</p>
+            <p class="lg:text-xl text-sm">
+              <span id="total-balance">5500</span> BDT
+            </p>
           </div>
         </div>
       </nav>
@@ -53,12 +55,14 @@
       <!-- Buttons -->
       <div class="flex justify-center mt-20 space-x-4">
         <button
-          class="btn btn-lg font-semibold text-xl active:bg-primary-color"
+          id="btn-show-donation"
+          class="btn btn-lg font-semibold text-xl focus:bg-primary-color"
         >
           Donation
         </button>
         <button
-          class="btn btn-lg font-semibold text-xl active:bg-primary-color"
+          id="btn-show-history"
+          class="btn btn-lg font-semibold text-xl focus:bg-primary-color"
         >
           History
         </button>
@@ -67,7 +71,7 @@
 
     <main>
       <!-- DONATIONS start -->
-      <section class="space-y-8">
+      <section id="donate-section" class="space-y-8">
         <!-- Noakhali donation start -->
         <section>
           <div class="xl:container xl:mx-auto">
@@ -79,8 +83,8 @@
                     <div
                       class="flex bg-coin-bg space-x-2 w-auto lg:w-2/12 py-1 justify-center rounded-lg"
                     >
-                      <img src="assets/coin.png" alt="" />
-                      <p>0 BDT</p>
+                      <img class="size-5" src="assets/coin.png" alt="" />
+                      <p><span id="noakhali-balance">1050</span> BDT</p>
                     </div>
                   </div>
                   <h1 class="text-xl font-bold">
@@ -96,12 +100,16 @@
                   </p>
                   <div class="flex flex-col space-y-2">
                     <input
+                      id="input-noakhali"
                       class="p-3 rounded-lg shadow-md"
                       type="text"
                       placeholder="Write Donation Amount"
                     />
-                    <button class="btn bg-primary-color hover:bg-primary-color">
-                      Get Started
+                    <button
+                      id="btn-donate-noakhali"
+                      class="btn bg-primary-color hover:bg-primary-color text-xl font-semibold"
+                    >
+                      Donate Now
                     </button>
                   </div>
                 </div>
@@ -122,8 +130,8 @@
                     <div
                       class="flex bg-coin-bg space-x-2 w-auto lg:w-2/12 py-1 justify-center rounded-lg"
                     >
-                      <img src="assets/coin.png" alt="" />
-                      <p>0 BDT</p>
+                      <img class="size-5" src="assets/coin.png" alt="" />
+                      <p><span id="feni-balance">850</span> BDT</p>
                     </div>
                   </div>
                   <h1 class="text-xl font-bold">
@@ -139,12 +147,16 @@
                   </p>
                   <div class="flex flex-col space-y-2">
                     <input
+                      id="input-feni"
                       class="p-3 rounded-lg shadow-md"
                       type="text"
                       placeholder="Write Donation Amount"
                     />
-                    <button class="btn bg-primary-color hover:bg-primary-color">
-                      Get Started
+                    <button
+                      id="btn-donate-feni"
+                      class="btn bg-primary-color hover:bg-primary-color text-xl font-semibold"
+                    >
+                      Donate Now
                     </button>
                   </div>
                 </div>
@@ -165,8 +177,8 @@
                     <div
                       class="flex bg-coin-bg space-x-2 w-auto lg:w-2/12 py-1 justify-center rounded-lg"
                     >
-                      <img src="assets/coin.png" alt="" />
-                      <p>0 BDT</p>
+                      <img class="size-5" src="assets/coin.png" alt="" />
+                      <p><span id="quota-balance">1250</span> BDT</p>
                     </div>
                   </div>
                   <h1 class="text-xl font-bold">
@@ -186,12 +198,16 @@
                   </p>
                   <div class="flex flex-col space-y-2">
                     <input
+                      id="input-quota"
                       class="p-3 rounded-lg shadow-md"
                       type="text"
                       placeholder="Write Donation Amount"
                     />
-                    <button class="btn bg-primary-color hover:bg-primary-color">
-                      Get Started
+                    <button
+                      id="btn-donate-quota"
+                      class="btn bg-primary-color hover:bg-primary-color text-xl font-semibold"
+                    >
+                      Donate Now
                     </button>
                   </div>
                 </div>
@@ -201,7 +217,18 @@
         </section>
         <!-- aid for quota movement end -->
       </section>
+
+      <!-- History section Start -->
+      <section id="history-section" class="hidden">
+        <div id="history-list" class="space-y-3"></div>
+      </section>
+      <!-- History section End -->
     </main>
     <footer class="p-11 bg-navbar-color mt-20"></footer>
+
+    <!-- js files -->
+    <script src="js/home.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>
